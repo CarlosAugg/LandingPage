@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Carlos Augusto</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <nav class="navegacao">
-    <ul>
-      <li><a href="#apresentacao">Apresentação</a></li>
-      <li><a href="#portfolio">Portfólio</a></li>
-      <li><a href="#interesses-hobbies">Interesses & Hobbies</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carlos Augusto</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="src/script.js"></script>
+  </head>
 
-  <main class="conteudo">
-    <header class="apresentacao" id="apresentacao">
-      <img src="img/Caligrafia Nome.png" id="assinatura" alt="Assinatura de Carlos Augusto" class="invert" />
-      <img src="img/Carlos Augusto.jpg" id="carlos" alt="Carlos Augusto" />
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis eaque quis deserunt pariatur nobis? Qui eos dolor doloribus quis praesentium amet alias voluptatem omnis. Iste similique sunt inventore corporis possimus!!</p>
+  <body>
+    <img
+      src="src/img/Caligrafia Nome.png"
+      id="assinatura"
+      alt="Assinatura de Carlos Augusto"
+      class="invert"
+    />
+
+    <header class="apresentacao">
+      <img src="src/img/Carlos Augusto.jpg" id="carlos" alt="Carlos Augusto" />
+      <div class="textos">
+        <h2 id="typed-text"></h2>
+        <p>
+          Desenvolvedor fullstack com 21 anos graduando em análise e desenvolvimento de sistemas pela Estácio e amante de design grafico UX/UI
+          <br>
+          <br>
+          <br>         Aprender, é de longe, a maior recompensa. - Willian Hazlitt
+        </p>
+      </div>
     </header>
 
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio">
+      <div class="textos">
       <h2>Portfólio</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio omnis
-        fuga consectetur qui eos, illum distinctio. Vel quisquam mollitia
-        voluptates saepe iure quis est rerum, beatae natus similique quas
-        placeat.
+        Veja mais sobre meu trabalho e projetos!
       </p>
-     
-      <div class="preview-port">
-      
-      </div>
+    </div>
+    <div class="preview-port"></div>
     </section>
 
-    <section class="interesses-hobbies" id="interesses-hobbies">
+    <section class="interesses-hobbies">
       <h2>Interesses & Hobbies</h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
@@ -46,32 +48,36 @@
         exercitationem, dolorem optio.
       </p>
       <div class="hobbies-imagens">
-        <img src="img/xadrez.jpg" alt="Interesse 1" class="hobby-imagem" />
-        <img src="img/churras.jpg" alt="Interesse 2" class="hobby-imagem" />
-        <img src="img/OIP.jpg" alt="Interesse 3" class="hobby-imagem" />
+        <img src="src/img/xadrez.jpg" class="hobby-imagem" />
+        <img src="src/img/churras.jpg" class="hobby-imagem" />
+        <img src="src/img/OIP.jpg" class="hobby-imagem" />
       </div>
     </section>
-  </main>
 
-  <footer class="contato" id="contato">
-    <h2>Contato</h2>
-    <div class="redes">
-      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-        <img src="img/instagram-1-svgrepo-com.png" alt="Instagram"/>
-      </a>
-      <a href="https://github.com" target="_blank" aria-label="GitHub">
-        <img src="img/github-svgrepo-com.png" alt="GitHub" class="invert"/>
-      </a>
-      <a href="https://www.behance.net" target="_blank" aria-label="Behance">
-        <img src="img/behance-internet-media-svgrepo-com.png" alt="Behance" class="invert" />
-      </a>
-      <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
-        <img src="img/linkedin-svgrepo-com.png" alt="LinkedIn" />
-      </a>
-    </div>
-    <div class="contato-informacoes">
-      <a href="mailto:carlosaugg@hotmail.com">carlosaugg@hotmail.com</a>
-    </div>
-  </footer>
-</body>
+    <footer class="contato">
+      <h2>Contato</h2>
+      <div class="redes">
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="src/img/instagram-1-svgrepo-com.png" alt="Instagram" />
+        </a>
+        <a href="https://github.com" target="_blank" aria-label="GitHub">
+          <img
+            src="src/img/github-svgrepo-com.png"
+            alt="GitHub"
+          />
+        </a>
+        </a>
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <img src="src/img/linkedin-svgrepo-com.png" alt="LinkedIn" />
+        </a>
+      </div>
+      <div class="contato-informacoes">
+        <a href="mailto:carlosaugg@hotmail.com">carlosaugg@hotmail.com</a>
+      </div>
+    </footer>
+  </body>
 </html>
