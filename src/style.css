@@ -21,11 +21,31 @@ body {
   display: grid;
 }
 
-#assinatura {
-  justify-self: center;
-  width: 25vw;
-  margin-top: 2vw;
+#intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000; /* Fundo escuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Coloca acima de tudo */
+  opacity: 1;
+  transition: opacity 2s ease; /* Transição para o fade out */
 }
+
+#intro img {
+  width: 30vw; /* Ajuste o tamanho da assinatura */
+  filter: invert(1); /* Invertendo as cores */
+}
+
+#intro.fade-out {
+  opacity: 0;
+  pointer-events: none; /* Evita cliques na tela durante o fade out */
+}
+
 
 .apresentacao {
   display: grid;
@@ -34,12 +54,13 @@ body {
   gap: 1rem; /* Ajuste de espaçamento */
   padding: 2rem;
   align-items: center;
+  padding-top: 8vw;
 }
 
 .apresentacao h2 {
   grid-column: 2;
   grid-row: 1;
-  font-size: 7vw;
+  font-size: 6vw;
   background: linear-gradient(
     to right,
     #ff7e5f,
@@ -47,6 +68,7 @@ body {
   ); /* Define o gradiente */
   -webkit-background-clip: text; /* Recorta o fundo para o texto */
   -webkit-text-fill-color: transparent; /* Torna o texto transparente */
+  font-family: monospace;
 }
 
 #typed-text {
@@ -173,4 +195,84 @@ body {
 .contato-informacoes a{
     text-decoration: none;
     color: white;
+}
+
+/* Container do carrossel */
+.carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 80vw; /* Ajusta conforme necessário */
+  margin: 0 auto; /* Centraliza o carrossel */
+}
+
+/* Track que vai "rolar" as imagens */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Container do track, controla o tamanho visível */
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%; /* Ocupará 100% da largura disponível */
+}
+
+/* Itens do carrossel (imagens com legenda) */
+.carousel-item {
+ width: 20vw;
+ height: auto;
+  text-align: center;
+  position: relative;
+}
+
+.hobby-imagem {
+  width: 100%;
+  height: auto;
+  border-radius: 1vw;
+}
+
+/* Estilo das legendas */
+.caption {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Botões de navegação */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .carousel {
+    width: 100vw; /* Ajusta para telas menores */
+  }
+
+  .prev, .next {
+    font-size: 1.5rem;
+  }
+
+  .caption {
+    font-size: 1rem;
+  }
 }
