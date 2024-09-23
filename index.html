@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carlos Augusto</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="src/script.js" defer></script>
+</head>
+<body>
+    <div id="intro">
+        <img src="src/img/Caligrafia Nome.png" alt="Assinatura de Carlos Augusto" />
+    </div>
+
+    <header id="apresentacao" class="apresentacao">
+        <img src="src/img/Carlos Augusto.jpg" id="carlos" alt="Carlos Augusto" />
+        <div class="textos">
+            <h2 id="typed-text"></h2>
+            <p>
+                Desenvolvedor fullstack com 21 anos, graduando em análise e desenvolvimento de sistemas pela Estácio e amante de design gráfico UX/UI.
+                <br><br><br>Aprender, é de longe, a maior recompensa. - Willian Hazlitt
+            </p>
+        </div>
+    </header>
+
+    <section id="portfolio" class="portfolio">
+        <div class="textos">
+            <h2>Portfólio</h2>
+            <p>Veja mais sobre meu trabalho e projetos!</p>
+        </div>
+        <div class="preview-port"></div>
+    </section>
+    <h2 class="titulo-interesses">Interesses & Hobbies</h2>
+    <div class="carousel">
+        <div class="carousel-wrapper">
+            <div class="carousel-item">
+                <img src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Beautiful-Full-HD-Images.jpg" alt="Imagem 1">
+                <p>Texto da imagem 1</p>
+            </div>
+            <div class="carousel-item">
+                <img src="https://i0.wp.com/exposurescape.com/wp-content/uploads/2013/09/moran-tetons-reflection.jpg?fit=1280%2C854" alt="Imagem 2">
+                <p>Texto da imagem 2</p>
+            </div>
+            <div class="carousel-item">
+                <img src="https://img1.wsimg.com/isteam/stock/D1dGOx5/:/cr=t:12.5%25,l:0%25,w:100%25,h:75%25/rs=w:600,h:300,cg:true" alt="Imagem 3">
+                <p>Texto da imagem 3</p>
+            </div>
+        </div>
+        <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+        <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+    </div>
+    
+    <footer id="contato" class="contato">
+        <h2>Contato</h2>
+        <div class="redes">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="src/img/instagram-1-svgrepo-com.png" alt="Instagram" />
+            </a>
+            <a href="https://github.com" target="_blank" aria-label="GitHub">
+                <img src="src/img/github-svgrepo-com.png" alt="GitHub" />
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <img src="src/img/linkedin-svgrepo-com.png" alt="LinkedIn" />
+            </a>
+        </div>
+        <div class="contato-informacoes">
+            <a href="mailto:carlosaugg@hotmail.com">carlosaugg@hotmail.com</a>
+        </div>
+    </footer>
+</body>
+</html>
